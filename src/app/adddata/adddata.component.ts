@@ -24,7 +24,7 @@ onSubmit(): void {
     this.listdata.add(this.newform.value)
       .subscribe(
         (data: any) => {
-          this.status = 'Form submitted successfully!';
+          this.status = 'Data submitted successfully!';
           this.newvalue = data;
 },);
   } else {
