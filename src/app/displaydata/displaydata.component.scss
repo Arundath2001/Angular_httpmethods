@@ -1,0 +1,18 @@
+.displaydata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    margin: 40px 60px;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    h2{
+        padding: 10px;
+    }
+}

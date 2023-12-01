@@ -1,0 +1,30 @@
+.adddata{
+    text-align: start;
+    color: white;
+    font-weight: bold;
+    margin: 30px 50px;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    border: 2px solid white;
+    border-radius: 20px;
+    &__cont1{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    h2{
+      text-decoration: underline red;
+    }
+    &__cont2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}

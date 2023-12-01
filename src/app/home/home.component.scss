@@ -1,0 +1,16 @@
+.home{
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    max-width: max-content;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 200px auto;
+    border: 2px solid white;
+
+
+}
+div:hover{
+    transform: scale(1.1);
+    transition: .7s;
+}
