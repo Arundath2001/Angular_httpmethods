@@ -1,0 +1,63 @@
+<div class="changedata">
+    <div class="changedata__cont1">
+      <h2>Change Data</h2>
+      <div class="changedata__smallcont">
+        <label for="itemId">Enter ID:</label>
+        <input type="number" id="itemId" [(ngModel)]="itemId" />
+        <button (click)="getvalues()">Get Data</button>
+      </div>
+      <form [formGroup]="newform" *ngIf="changeData">
+        <div>
+          <label for="id">ID:</label>
+          <input type="number" id="id" formControlName="id" />
+        </div>
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" formControlName="title" />
+        </div>
+        <div>
+          <label for="userId">User ID:</label>
+          <input type="number" id="userId" formControlName="userId" />
+        </div>
+        <div>
+          <label for="completed">Completed:</label>
+          <select id="completed" formControlName="completed">
+            <option [value]="true">True</option>
+            <option [value]="false">False</option>
+          </select>
+        </div>
+        <div>
+          <button (click)="putitem()">Put Data</button>
+          <button (click)="patchitem()">Patch Data</button>
+          <button (click)="deleteitem()">Delete Data</button>
+        </div>
+      </form>
+    </div>
+  
+    <div class="changedata__cont2">
+      <h2>Status</h2>
+      <p>{{ status }}</p>
+      <ng-container *ngIf="newdata">
+        <h2>Updated Data</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>User ID</th>
+              <th>Completed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ newdata.id }}</td>
+              <td>{{ newdata.title }}</td>
+              <td>{{ newdata.userId }}</td>
+              <td>{{ newdata.completed }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </ng-container>
+    </div>
+</div>
+  

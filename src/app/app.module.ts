@@ -9,13 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpService } from './http.service';
+import { ChangedataComponent } from './changedata/changedata.component';
 @NgModule({
   declarations: [
     AppComponent,
     AdddataComponent,
     DisplaydataComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ChangedataComponent
   ],
   imports: [
     BrowserModule,
